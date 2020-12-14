@@ -1,0 +1,55 @@
+.form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-bg-color;
+  border-radius: 8px;
+  position: absolute;
+  top: 252px;
+  right: 18%;
+
+  &__title {
+    font-size: 22px;
+    font-family: $main-font-montserrat;
+    font-weight: 600;
+    color: $main-color-white;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  &__input {
+    font-size: 20px;
+    line-height: 2.6;
+    margin: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    width: 352px;
+    padding-left: 20px;
+  }
+
+  &__checkbox {
+    align-self: start;
+    padding-left: 24px;
+    line-height: 2.2;
+    color: $main-color-white;
+    margin-bottom: 12px;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    font-family: $main-font-montserrat;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 20px 130px;
+    background-color: $main-color-black;
+    color: $main-color-white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 24px;
+  }
+
+  &__btn:hover {
+    color: $main-bg-color;
+  }
+}
