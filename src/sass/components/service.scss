@@ -1,0 +1,87 @@
+.service {
+  padding: $all-padding;
+  font-family: $secondary-font-times;
+  
+  &__title {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 280px;
+  }
+
+  &__title-color {
+    color: $main-bg-color;
+  }
+
+  &__box {
+    @include flexSpaceBetw;
+  }
+
+  &__item {
+    width: 180px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 70px;
+  }
+
+  &__item::after {
+    display: block;
+    content: '';
+    height: 160px;
+    width: 164px;
+    position: absolute;
+    top: -180px;
+    left: 16px;
+  }
+
+  &__shape::after {
+    background-image: url(../images/icon-Shape.png);
+    background-repeat: no-repeat;
+  }
+
+  &__tools::after {
+    background-image: url(../images/icon-tools.png);
+    background-repeat: no-repeat;
+  }
+
+  &__ideas::after {
+    background-image: url(../images/icon-ideas.png);
+    background-repeat: no-repeat;
+  }
+
+  &__navigate::after {
+    background-image: url(../images/icon-navigate.png);
+    background-repeat: no-repeat;
+  }
+} 
+
+.story{
+  background-color: $main-bg-color;
+  height: 120px;
+  padding: $all-padding;
+  @include flexSpaceBetw;
+
+  &__text {
+    font-size: 20px;
+    max-width: 600px;
+    font-family: $secondary-font-times;
+    text-align: center;
+    color: $main-color-white;
+  }
+
+  &__btn {
+    background-color: $secondary-bg-color;
+    padding: 20px 65px;
+    border: none;
+    font-family: $main-font-montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 22px;
+    border-radius: 5px;
+  }
+
+  &__btn:hover {
+    box-shadow: 0px 0px 5px 5px #000;
+  }
+}
