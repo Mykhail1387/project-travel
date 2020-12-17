@@ -1,0 +1,80 @@
+.pricing {
+  background-color: $secondary-bg-color;
+  padding: $all-padding;
+
+  &__title {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: $main-font-montserrat;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3.0;
+  }
+
+  &__box {
+    @include flexSpaceBetw;
+  }
+
+  &__card {
+    width: 318px;
+    background-color: $main-color-white;
+    @include vertical;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+  }
+
+  &__triangle {
+    width: 0;
+    height: 0;
+    border: 40px solid;
+    border-color: #b4a993 transparent transparent #b4a993;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+  }
+
+  &__triangle-text {
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -40px;
+    top: -22px;
+    font-size: 16px;
+  }
+
+  &__card-name {
+    font-size: 22px;
+    font-family: $secondary-font-times;
+    padding-top: 30px;
+  }
+
+  &__card-price {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: $main-font-montserrat;
+    font-weight: bold;
+    color: $main-bg-color;
+    line-height: 2.2;
+  }
+
+  &__card-description {
+    font-size: 20px;
+    font-family: $secondary-font-times;
+  }
+
+  &__card-btn {
+    padding: 12px 70px;
+    text-transform: uppercase;
+    font-family: $main-font-montserrat;
+    font-weight: 600;
+    background-color: $secondary-bg-color;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  &__card-btn:hover {
+    background-color: $main-bg-color;
+    color: $main-color-white;
+  }
+}
