@@ -1,0 +1,72 @@
+.forUsers {
+  display: flex;
+  justify-content: space-between;
+  padding: $all-padding;
+
+  &__title {
+    font-size: 50px;
+    font-family: $main-font-montserrat;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  &__red {
+    color: $main-bg-color;
+  }
+
+  &__box {
+    width: 420px;
+    padding: 20px 0 20px 25px;
+    position: relative;
+  }
+
+  &__box:hover {
+    background-color: $secondary-bg-color;
+    border-radius: 5px;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-family: $secondary-font-times;
+    max-width: 338px;
+    
+  }
+
+  &__image {
+    position: absolute;
+    top: 5px;
+    right: -68px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-family: $main-font-montserrat;
+    font-weight: 600;
+    line-height: 4.2;
+    color: $main-bg-color;
+  }
+
+  &__gallery-box {
+    max-width: 412px;
+  }
+
+  &__btn {
+    font-family: $main-font-montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: $main-bg-color;
+    padding-left: 80px;
+    padding-top: 30px;
+    margin-bottom: 120px;
+  }
+
+  &__btn:hover {
+    color: $main-color-black;
+  }
+}

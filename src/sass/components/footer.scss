@@ -1,0 +1,16 @@
+.footer {
+  height: 180px;
+  background-color: $main-color-black;
+  padding: $all-padding;
+  @include flexSpaceBetw;
+
+  &__text {
+    color: $main-color-white;
+    font-size: 20px;
+    font-family: $secondary-font-times;
+  }
+
+  &__text-red {
+    color: $main-bg-color;
+  }
+}
